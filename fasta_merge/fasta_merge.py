@@ -28,9 +28,9 @@ def main():
     parser.add_argument('output_path', type=str,
                         help='str: output FASTA file')
     parser.add_argument('custom_id', type=str,
-                        help='str: custom id')
+                        help='str: custom id for the resulting single sequence')
     parser.add_argument('line_length', type=int, nargs='?',
-                        help='int: line length')
+                        help='int: line length (default=80)')
 
     args = parser.parse_args()
     input_path = args.input_path
